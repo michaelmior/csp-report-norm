@@ -33,7 +33,7 @@ suite(__dirname.split('/').pop(), function() {
     });
 
     test('IP address alone returns IP address alone', function() {
-      var ipWithoutProtocol = 'http://127.0.0.1';
+      var ipWithoutProtocol = '127.0.0.1';
       assert.equal(sanitize(ipWithoutProtocol), ipWithoutProtocol);
     });
   });
